@@ -285,8 +285,8 @@ describe("Multer S3", function () {
       s3: s3,
       bucket: "test",
       shouldTransform: true,
-      transforms: () => {
-        const KeyName = "test";
+      transforms: function () {
+        var KeyName = "test";
         return [
           {
             key: KeyName,
