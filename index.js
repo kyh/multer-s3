@@ -216,6 +216,7 @@ function S3Storage(opts) {
         default:
           throw new TypeError("Expected opts.transforms() to be undefined or object");
       }
+      break;
     case "undefined":
       this.getTransforms = defaultTransforms;
       break;
